@@ -1,5 +1,8 @@
 language: ruby
 before_install:
+  - curl -L https://packagecloud.io/hughrawlinson/chuck/gpgkey | sudo apt-key add -
+  - sudo apt-get install -y apt-transport-https
+  - echo "deb https://packagecloud.io/hughrawlinson/chuck/ubuntu/ trusty main" | sudo tee -a /etc/apt/sources.list
   - sudo apt-get -qq update
   - sudo apt-get install -y chuck sox
 script:
@@ -7,3 +10,5 @@ script:
 cache:
   directories:
   - data
+sudo: required
+dist: trusty
