@@ -1,4 +1,4 @@
-2 => int status;
+1 => int status;
 now + 5::minute => time maxLength;
 
 // should be one sample in "production"
@@ -14,7 +14,7 @@ filename => w.wavFilename;
 // temporary workaround to automatically close file on remove-shred
 null @=> w;
 
-while( status > 1 && now < maxLength) {
+while( status > 0 && now < maxLength) {
     resolution => now;
-    // vm shred count => status
+    Machine.shreds()[1] => status;
 }
