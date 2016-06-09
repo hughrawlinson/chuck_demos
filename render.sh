@@ -13,11 +13,7 @@ for i in $( ls code | grep .ck ); do
   then
     # render pcm data
     echo "data/$i.wav is being rendered"
-    chuck -s $(echo "code/$i") rec.ck:$(echo "data/$i.silent.wav")
-    # trim silence
-    sox "data/$i.silent.wav" "data/$i.wav" silence 1 0.1 0.1% reverse silence 1 0.1 0.1% reverse
-    # clean up
-    rm "data/$i.silent.wav"
+    chuck -s $(echo "code/$i") rec.ck:$(echo "data/$i.wav")
       else
     echo "data/$i.wav is cached"
   fi
