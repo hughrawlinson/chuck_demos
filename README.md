@@ -1,5 +1,7 @@
 # ChucK Demos
 
+[![Build Status](https://travis-ci.com/hughrawlinson/chuck_demos.svg?token=iisGGMb1xGgxpKy2xqhq&branch=master)](https://travis-ci.com/hughrawlinson/chuck_demos)
+
 This is a project for me to be able to write ChucK code, commit it to this
 repo, and have it appear on SoundCloud via the magic of continuous integration.
 
