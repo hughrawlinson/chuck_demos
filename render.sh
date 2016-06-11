@@ -19,7 +19,7 @@ for i in $( ls code | grep .ck ); do
   if [[ $(echo "$vol < 0.1" | bc) -eq 1 ]];
   then
     echo "$i is silent! Not uploading"
-  elif [ -z $TRAVIS_PULL_REQUEST ] || [ $TRAVIS_PULL_REQUEST -eq false ] 
+  elif [ -z $TRAVIS_PULL_REQUEST ] || [ $TRAVIS_PULL_REQUEST == false ] 
   then
     echo "This is a pull request, skipping SoundCloud upload"
   else
