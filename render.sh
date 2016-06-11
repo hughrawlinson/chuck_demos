@@ -20,6 +20,6 @@ for i in $( ls code | grep .ck ); do
   then
     echo "$i is silent! Not uploading"
   else
-    ruby upload.rb $i.wav
+    bundle exec ruby upload.rb $i.wav
   fi
 done

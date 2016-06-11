@@ -1,7 +1,7 @@
 require('soundcloud')
 
-client = Soundcloud.new(:client_id => '83a5d667b5b95eb6037fd7af819e722a',
-                        :client_secret => '4f7b9c1b211612179e07d015fc615dd1',
+client = Soundcloud.new(:client_id => ENV['SOUNDCLOUD_CLIENT_ID'],
+                        :client_secret => ENV['SOUNDCLOUD_CLIENT_SECRET'],
                         :username => ENV['SOUNDCLOUD_USERNAME'],
                         :password => ENV['SOUNDCLOUD_PASSWORD'])
 if client.get('/me/tracks').map{ |x| x.title }.include? ARGV[0]
