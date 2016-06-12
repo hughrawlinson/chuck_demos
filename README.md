@@ -23,6 +23,10 @@ profile.
 
 ## Notes
 
+The recordings will be as long as the ChucK script keeps running, up to a
+total of 5 minutes, when they'll be cut off to preserve SoundCloud space. Of
+course, you can change this in your fork by modifying `rec.ck`.
+
 I apologise for the fact that you have to use your credentials, the SoundCloud
 API doesn't have a great way to authenticate users without a server. If you
 have a better idea, I'd welcome a pull request!
