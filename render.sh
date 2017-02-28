@@ -11,7 +11,7 @@ for i in $( ls code | grep .ck ); do
     # render pcm data
     echo "data/$i.wav is being rendered"
     chuck -s $(echo "code/$i") rec.ck:$(echo "data/$i.wav")
-      else
+  else
     echo "data/$i.wav is cached"
   fi
   # Check if sound was actually created
