@@ -1,3 +1,7 @@
+_Heads Up: Soundcloud aren't providing API keys at the moment, so this project
+isn't super useful for now. Hoping they change their minds and open up their
+API again soon._
+
 # ChucK Demos
 
 [![Build Status](https://travis-ci.com/hughrawlinson/chuck_demos.svg?token=iisGGMb1xGgxpKy2xqhq&branch=master)](https://travis-ci.com/hughrawlinson/chuck_demos)
